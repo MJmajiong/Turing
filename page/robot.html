@@ -46,7 +46,7 @@
             appendChat(val, 1);
 
             var ajax = new XMLHttpRequest();
-            ajax.open("get","http://192.168.199.160:12306/api/chat?text=" + val);
+            ajax.open("get","http://39.108.2.103:12306/api/chat?text=" + val);
             ajax.send();
             ajax.onreadystatechange = function () {
                 if (ajax.readyState==4 &&ajax.status==200) {
